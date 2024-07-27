@@ -22,7 +22,7 @@ const TicketSection = () => {
           className="mt-12 text-center text-black space-y-6 relative"
         >
           <p className="text-md md:text-lg text-black">
-            Secure your spot at TECH SUMMIT 2024 by purchasing your tickets now. Don't miss out on this transformative event!
+            Secure your spot at TECH SUMMIT 2024 by purchasing your tickets now. Don&apos;t miss out on this transformative event!
           </p>
           <div className="w-full flex justify-center mt-8 relative">
             <iframe
