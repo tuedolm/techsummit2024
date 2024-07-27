@@ -7,7 +7,7 @@ const speakers = [
   {
     name: "CHAU VU",
     title: "Co-Founder of Techcare Coaching",
-    image: "/speakers/ChauVu.PNG",
+    image: "/speakers/chauvu-photo.png",
     description: "Detailed information about Chau Vu.",
     twitter: "#",
     linkedin: "#",
@@ -15,7 +15,7 @@ const speakers = [
   {
     name: "DUC PHAM",
     title: "CEO of Wonder Rates",
-    image: "/speakers/DucPham.JPG",
+    image: "/speakers/ducpham-photo.png",
     description: "Detailed information about Duc Pham.",
     twitter: "#",
     linkedin: "#",

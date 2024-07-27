@@ -6,25 +6,25 @@ const experiences = [
     title: "Company Tour",
     description:
       "Company Tour Section text",
-    image: "/experiences/companytour.jpg",
+    image: "/experiences/companytour-photo.jpg",
   },
   {
     title: "Panel Discussion",
     description:
       "Panel Discussion Section text",
-    image: "/experiences/panelist.jpg",
+    image: "/experiences/panelist-photo.jpg",
   },
   {
     title: "Workshops",
     description:
       "Workshops Section text",
-    image: "/experiences/workshop.jpg",
+    image: "/experiences/workshop-photo.jpg",
   },
   {
     title: "Meet and Network",
     description:
       "Meet and Network Section text",
-    image: "/experiences/networking.jpg",
+    image: "/experiences/networking-photo.jpg",
   },
 ];
 
