@@ -1,90 +1,154 @@
 import React from "react";
+import Image from "next/image";
 
 const agendaItems = {
-  "Thu May 09": [
+  "August 16": [
     {
-      time: "8:00 AM - 9:00 AM PDT",
-      duration: "1 Hour",
-      title: "Registration & Networking Breakfast",
-      location: "Rooftop",
-      description: "",
+      time: "1:00 PM - 5:00 PM",
+      duration: "4 Hours",
+      title: "Company Tour",
+      location: "Various Locations",
+      description: "Explore some of the leading tech companies in Silicon Valley.",
       speakers: [],
     },
     {
-      time: "8:15 AM - 9:00 AM PDT",
-      duration: "45 Min",
-      title: "Bloomberg Breakout: Q&AI With Hugging Face",
-      location: "Insight Enclave",
-      description:
-        "Attendance is limited & registration is required for this session. In an intimate breakfast session, join Hugging Face CEO Clém Delangue to explore many of the top issues and innovations surrounding artificial intelligence today. We’ll cover topics including the debate around open vs. closed source, transparency and regulation, and the ethical development of these emerging technologies. The audience will have an opportunity to engage in the conversation and ask their burning questions.",
+      time: "6:30 PM",
+      duration: "30 Min",
+      title: "Welcome",
+      location: "Main Hall",
+      description: "Opening welcome by the event organizers.",
       speakers: [
         {
-          name: "Clément Delangue",
-          title: "Co-Founder & CEO, Hugging Face",
-          image: "/images/clement.jpg",
-        },
-        {
-          name: "Shirin Ghaffary",
-          title: "AI Reporter, Bloomberg",
-          image: "/images/shirin.jpg",
+          name: "John Doe",
+          title: "Event Organizer",
+          image: "/speakers/john_doe.jpg",
         },
       ],
     },
     {
-      time: "9:05 AM - 9:10 AM PDT",
-      duration: "5 Min",
-      title: "Welcome Remarks",
-      location: "Mainstage",
-      description: "",
-      speakers: [
-        {
-          name: "Emily Chang",
-          title: "Host & Executive Producer, Bloomberg Originals",
-          image: "/images/emily.jpg",
-        },
-      ],
+      time: "7:00 PM",
+      duration: "1 Hour",
+      title: "Casual Networking and Dinner",
+      location: "Main Hall",
+      description: "Join us for dinner and networking with fellow attendees.",
+      speakers: [],
+    },
+    {
+      time: "8:00 PM",
+      duration: "1 Hour",
+      title: "Live Music by Cỏ Band",
+      location: "Main Stage",
+      description: "Enjoy live music performances by Cỏ Band.",
+      speakers: [],
+    },
+    {
+      time: "9:00 PM",
+      duration: "2 Hours",
+      title: "Free Flow",
+      location: "Lounge Area",
+      description: "Relax and enjoy free-flowing drinks and conversations.",
+      speakers: [],
     },
   ],
-  "Fri May 10": [
+  "August 17": [
     {
-      time: "8:00 AM - 9:00 AM PDT",
+      time: "9:00 AM - 10:00 AM",
       duration: "1 Hour",
-      title: "Registration & Networking Breakfast",
-      location: "Rooftop",
-      description: "",
+      title: "Check-in",
+      location: "Main Entrance",
+      description: "Get your badges and materials for the day.",
       speakers: [],
     },
     {
-      time: "8:15 AM - 9:00 AM PDT",
-      duration: "45 Min",
-      title: "Bloomberg Breakout: Q&AI With Hugging Face",
-      location: "Insight Enclave",
-      description:
-        "Attendance is limited & registration is required for this session. In an intimate breakfast session, join Hugging Face CEO Clém Delangue to explore many of the top issues and innovations surrounding artificial intelligence today. We’ll cover topics including the debate around open vs. closed source, transparency and regulation, and the ethical development of these emerging technologies. The audience will have an opportunity to engage in the conversation and ask their burning questions.",
+      time: "10:00 AM - 10:15 AM",
+      duration: "15 Min",
+      title: "Welcome Speech from Organizers and Sponsors",
+      location: "Main Hall",
+      description: "Kickoff speech from our organizers and sponsors.",
       speakers: [
         {
-          name: "Clément Delangue",
-          title: "Co-Founder & CEO, Hugging Face",
-          image: "/images/clement.jpg",
-        },
-        {
-          name: "Shirin Ghaffary",
-          title: "AI Reporter, Bloomberg",
-          image: "/images/shirin.jpg",
+          name: "Jane Smith",
+          title: "Event Sponsor",
+          image: "/speakers/jane_smith.jpg",
         },
       ],
     },
     {
-      time: "9:05 AM - 9:10 AM PDT",
-      duration: "5 Min",
-      title: "Welcome Remarks",
-      location: "Mainstage",
-      description: "",
+      time: "10:15 AM - 11:15 AM",
+      duration: "1 Hour",
+      title: "Panel Discussion",
+      location: "Main Hall",
+      description: "Discussion on the latest trends and innovations in tech.",
       speakers: [
         {
-          name: "Emily Chang",
-          title: "Host & Executive Producer, Bloomberg Originals",
-          image: "/images/emily.jpg",
+          name: "Alice Johnson",
+          title: "Tech Expert",
+          image: "/speakers/alice_johnson.jpg",
+        },
+        {
+          name: "Bob Lee",
+          title: "Industry Leader",
+          image: "/speakers/bob_lee.jpg",
+        },
+      ],
+    },
+    {
+      time: "11:15 AM - 12:00 PM",
+      duration: "45 Min",
+      title: "Panel Q&A",
+      location: "Main Hall",
+      description: "Q&A session with the panelists.",
+      speakers: [
+        {
+          name: "Alice Johnson",
+          title: "Tech Expert",
+          image: "/speakers/alice_johnson.jpg",
+        },
+        {
+          name: "Bob Lee",
+          title: "Industry Leader",
+          image: "/speakers/bob_lee.jpg",
+        },
+      ],
+    },
+    {
+      time: "12:00 PM - 1:00 PM",
+      duration: "1 Hour",
+      title: "Lunch",
+      location: "Dining Area",
+      description: "Enjoy a variety of delicious meals.",
+      speakers: [],
+    },
+    {
+      time: "1:00 PM - 5:00 PM",
+      duration: "4 Hours",
+      title: "Workshops",
+      location: "Various Locations",
+      description: "Hands-on workshops on various tech topics.",
+      speakers: [
+        {
+          name: "Carlos Ruiz",
+          title: "Workshop Leader",
+          image: "/speakers/carlos_ruiz.jpg",
+        },
+        {
+          name: "Diana Miller",
+          title: "Workshop Leader",
+          image: "/speakers/diana_miller.jpg",
+        },
+      ],
+    },
+    {
+      time: "5:00 PM - 6:00 PM",
+      duration: "1 Hour",
+      title: "Closing Remarks, Raffle, and Networking",
+      location: "Main Hall",
+      description: "Final remarks, raffle draw, and networking opportunities.",
+      speakers: [
+        {
+          name: "Emily Davis",
+          title: "Event Organizer",
+          image: "/speakers/emily_davis.jpg",
         },
       ],
     },
@@ -115,10 +179,12 @@ const AgendaSection = () => {
                     <div className="mt-4 flex space-x-4">
                       {item.speakers.map((speaker, speakerIdx) => (
                         <div key={speakerIdx} className="flex items-center space-x-2">
-                          <img
+                          <Image
                             src={speaker.image}
                             alt={speaker.name}
                             className="w-10 h-10 rounded-full object-cover"
+                            width={40}
+                            height={40}
                           />
                           <div>
                             <div className="text-neutral-800 dark:text-neutral-100 font-bold">{speaker.name}</div>

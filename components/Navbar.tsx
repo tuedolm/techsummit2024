@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 bg-neutral-50 z-50 w-full p-4 shadow-md font-aileron-bold">
+    <nav className="sticky top-0 bg-neutral-50 z-50 w-full p-4 shadow-md font-aileron font-bold">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <Image src="/logo.png" alt="Tech Summit 2024" width={75} height={75} />

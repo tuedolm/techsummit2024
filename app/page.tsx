@@ -10,21 +10,22 @@ import SponsoringSection from "@/components/SponsorSection";
 import ContactSection from "@/components/ContactSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+import TicketSection from "@/components/TicketSection";
+
 export default function AppPage() {
   return (
     <div id="home" className="w-full bg-neutral-50 relative antialiased">
-      <div className="relative z-10">
-        <Navbar />
-        <Hero />
-        <AboutSection />
-        <ExperienceSection /> 
-        <AgendaSection />
-        <SpeakersSection />
-        <SponsoringSection />
-        <FAQSection />
-        <ContactSection />
-        <Footer />
-      </div>
+      <Navbar />
+      <Hero />
+      <AboutSection />
+      <ExperienceSection /> 
+      <AgendaSection />
+      <SpeakersSection />
+      <SponsoringSection />
+      <TicketSection />
+      <FAQSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }

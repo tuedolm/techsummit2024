@@ -6,32 +6,32 @@ const experiences = [
     title: "Company Tour",
     description:
       "Company Tour Section text",
-    image: "/images/curator.jpg",
+    image: "/experiences/companytour.jpg",
   },
   {
     title: "Panel Discussion",
     description:
       "Panel Discussion Section text",
-    image: "/images/ameca.jpg",
+    image: "/experiences/panelist.jpg",
   },
   {
     title: "Workshops",
     description:
       "Workshops Section text",
-    image: "/images/vision.jpg",
+    image: "/experiences/workshop.jpg",
   },
   {
     title: "Meet and Network",
     description:
       "Meet and Network Section text",
-    image: "/images/ones_to_watch.jpg",
+    image: "/experiences/networking.jpg",
   },
 ];
 
 const ExperienceSection = () => {
   return (
-    <div id="experience" className="w-full max-w-6xl mx-auto p-8 md:p-16">
-      <h2 className="text-3xl md:text-5xl font-bold text-center text-black">Exclusive on-site experiences:</h2>
+    <div id="experience" className="w-full max-w-6xl mx-auto p-8 md:p-16 bg-blue-700">
+      <h2 className="text-3xl md:text-5xl font-bold text-center text-white">Exclusive on-site experiences:</h2>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         {experiences.map((experience, index) => (
           <div key={index} className="bg-white dark:bg-neutral-900 rounded-lg shadow-md overflow-hidden">

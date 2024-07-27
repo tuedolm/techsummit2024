@@ -1,9 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const colors = require("tailwindcss/colors");
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config = {
   darkMode: ["class"],
@@ -13,19 +10,15 @@ const config = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
-  prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       fontFamily: {
-        'josefin': ['Josefin Sans', 'sans-serif'],
-        'aileron-bold': ['Aileron', 'sans-serif'],
+        'josefin': ['josefin-sans', 'sans-serif'],
+        'aileron': ['aileron', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+      },
+      fontWeight: {
+        'bold': 700,
       },
       colors: {
         border: "hsl(var(--border))",
@@ -83,18 +76,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")]
-} satisfies Config;
-
-function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
-
-  addBase({
-    ":root": newVars,
-  });
-}
+  plugins: [require("tailwindcss-animate")],
+};
 
 export default config;
