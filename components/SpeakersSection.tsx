@@ -15,7 +15,7 @@ const speakers = [
   {
     name: "DUC PHAM",
     title: "CEO of Wonder Rates",
-    image: "/speakers/ducpham-photo.png",
+    image: "/speakers/ducpham-photo.jpg",
     description: "Detailed information about Duc Pham.",
     twitter: "#",
     linkedin: "#",
