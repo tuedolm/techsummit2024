@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import SpeakerCard from "./SpeakerCard";
 import ExpandableCard from "./ExpandableCard";
 
@@ -16,7 +16,7 @@ const speakers = [
     name: "CHAU VU",
     title: "Co-Founder of Techcare Coaching",
     image: "/speakers/chauvu-photo.png",
-    description: "Detailed information about Chau Vu.",
+    description: "Ms. Chau Vu - Co-founder of TechCare Coaching, with 10 years of industry experience as a software engineer. She has a passion for helping computer science students and software engineers explore suitable career paths, develop a growth mindset, and navigate workplace conflicts in the tech industry.\n\nChau is also an active member of the Viet Tech and Viet Referral admin group, where she promotes knowledge sharing among Vietnamese tech professionals and advocates for more diversity in the tech industry..",
     twitter: "#",
     linkedin: "#",
   },
@@ -24,7 +24,7 @@ const speakers = [
     name: "DUC PHAM",
     title: "CEO of Wonder Rates",
     image: "/speakers/ducpham-photo.jpg",
-    description: "Detailed information about Duc Pham.",
+    description: "Duc Pham began his journey as a Senior Software Engineer, accumulating over 15 years of experience at major companies like Ericsson and Box. He then pivoted to the startup world, focusing on mortgage and real estate, achieving remarkable success with 200% growth, originating thousands of loans with over $1B in funding.\n\nWith a deep understanding of the pros and cons of both corporate and startup environments, Mr. Pham will share his transparent and valuable insights in his workshop.",
     twitter: "#",
     linkedin: "#",
   },
@@ -53,7 +53,7 @@ const speakers = [
     linkedin: "#",
   },
   {
-    name: "Tuan Doan",
+    name: "TUAN DOAN",
     title: "Staff DS at Quora | Head of Growth POE",
     image: "/speakers/tuandoan-photo.jpg",
     description: "Detailed information about Tuan Doan.",
@@ -77,14 +77,27 @@ const SpeakersSection = () => {
   };
 
   return (
-    <div id="speakers" className="w-full max-w-6xl mx-auto p-8 md:p-16">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id="speakers"
+      className="w-full max-w-6xl mx-auto p-8 md:p-16"
+    >
       <h2 className="text-3xl md:text-5xl font-bold text-center text-black">Speakers</h2>
       <p className="text-center text-black mt-4">
         We are bringing you the perfect combination of content and experience to ignite your heart, equip your mind, and spark your skill.
       </p>
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {speakers.map((speaker, index) => (
-          <SpeakerCard key={index} speaker={speaker} onClick={() => setSelectedSpeaker(speaker)} />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: index * 0.2 }}
+          >
+            <SpeakerCard speaker={speaker} onClick={() => setSelectedSpeaker(speaker)} />
+          </motion.div>
         ))}
       </div>
 
@@ -93,7 +106,7 @@ const SpeakersSection = () => {
           <ExpandableCard speaker={selectedSpeaker} onClose={handleClose} />
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 

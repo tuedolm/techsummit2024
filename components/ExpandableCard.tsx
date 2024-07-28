@@ -18,7 +18,10 @@ const ExpandableCard = ({ speaker, onClose }: { speaker: any, onClose: () => voi
     >
       <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
       <p className="text-neutral-400">{speaker.title}</p>
-      <p className="mt-4 text-neutral-200">{speaker.description}</p>
+      <div
+        className="mt-4 text-neutral-200"
+        dangerouslySetInnerHTML={{ __html: speaker.description.replace(/\n/g, '<br />') }}
+      />
       <div className="flex space-x-4 mt-4">
         <a href={speaker.twitter} className="text-neutral-400 hover:text-white">
           <FaTwitter size={24} />
