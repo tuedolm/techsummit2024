@@ -17,7 +17,7 @@ const sponsors = {
 
 const SponsorSection = () => {
   return (
-    <section id="sponsors" className="py-20 bg-gray-100">
+    <section id="sponsors" className="py-20 bg-neutral-50">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}

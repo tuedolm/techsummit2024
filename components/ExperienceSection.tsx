@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import useInViewAnimation from "@/hooks/useInViewAnimation"; // Update the import path as needed
 
 const experiences = [
   {
@@ -25,13 +26,15 @@ const experiences = [
   },
 ];
 
-const ExperienceSection = () => {
+const ExperienceSection: React.FC = () => {
+  const { ref, animation } = useInViewAnimation();
+
   return (
     <div className="w-full bg-blue-700 py-16">
-      <div id="experience" className="w-full max-w-6xl mx-auto px-8">
+      <div id="experience" ref={ref} className="w-full max-w-6xl mx-auto px-8">
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={animation}
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-5xl font-bold text-center text-white"
         >
@@ -42,7 +45,7 @@ const ExperienceSection = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+              animate={animation}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="bg-white dark:bg-neutral-900 rounded-lg shadow-md overflow-hidden"
             >

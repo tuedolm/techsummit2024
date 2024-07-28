@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SpeakerCard from "./SpeakerCard";
 import ExpandableCard from "./ExpandableCard";
+import useInViewAnimation from "@/hooks/useInViewAnimation"; // Update the import path as needed
 
 const speakers = [
   {
@@ -16,7 +17,7 @@ const speakers = [
     name: "CHAU VU",
     title: "Co-Founder of Techcare Coaching",
     image: "/speakers/chauvu-photo.png",
-    description: "Ms. Chau Vu - Co-founder of TechCare Coaching, with 10 years of industry experience as a software engineer. She has a passion for helping computer science students and software engineers explore suitable career paths, develop a growth mindset, and navigate workplace conflicts in the tech industry.\n\nChau is also an active member of the Viet Tech and Viet Referral admin group, where she promotes knowledge sharing among Vietnamese tech professionals and advocates for more diversity in the tech industry..",
+    description: "Ms. Chau Vu - Co-founder of TechCare Coaching, with 10 years of industry experience as a software engineer. She has a passion for helping computer science students and software engineers explore suitable career paths, develop a growth mindset, and navigate workplace conflicts in the tech industry.\n\nChau is also an active member of the Viet Tech and Viet Referral admin group, where she promotes knowledge sharing among Vietnamese tech professionals and advocates for more diversity in the tech industry.",
     twitter: "#",
     linkedin: "#",
   },
@@ -62,7 +63,7 @@ const speakers = [
   }
 ];
 
-const SpeakersSection = () => {
+const SpeakersSection: React.FC = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState<{
     name: string;
     title: string;
@@ -76,10 +77,13 @@ const SpeakersSection = () => {
     setSelectedSpeaker(null);
   };
 
+  const { ref, animation } = useInViewAnimation();
+
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={animation}
       transition={{ duration: 1 }}
       id="speakers"
       className="w-full max-w-6xl mx-auto p-8 md:p-16"
@@ -92,8 +96,8 @@ const SpeakersSection = () => {
         {speakers.map((speaker, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={animation}
             transition={{ duration: 1, delay: index * 0.2 }}
           >
             <SpeakerCard speaker={speaker} onClick={() => setSelectedSpeaker(speaker)} />
