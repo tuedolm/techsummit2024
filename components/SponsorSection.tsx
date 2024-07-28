@@ -7,7 +7,7 @@ const sponsors = {
   ],
   silver: [
     { name: 'FPT AI', logo: '/sponsors/fpt.ai' },
-    { name: 'LaCaphe', logo: ' }
+    { name: 'LaCaphe', logo: '' }
   ],
   bronze: [
     { name: 'Remitly', logo: '/images/company-d-logo.png' },
