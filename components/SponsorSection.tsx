@@ -1,28 +1,90 @@
-import Image from "next/image";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
-const SponsoringSection = () => {
+const sponsors = {
+  coOrganizer: [
+    { name: 'Viettel AI', logo: '/sponsors/viettel.jpg' }
+  ],
+  silver: [
+    { name: 'FPT AI', logo: '/sponsors/fpt.ai' },
+    { name: 'LaCaphe', logo: ' }
+  ],
+  bronze: [
+    { name: 'Remitly', logo: '/images/company-d-logo.png' },
+    { name: 'Vietkieu', logo: '/images/company-e-logo.png' }
+  ]
+};
+
+const SponsorSection = () => {
   return (
-    <div id="sponsors" className="w-full max-w-6xl mx-auto p-8 md:p-16">
-      <h2 className="text-3xl md:text-5xl font-bold text-center text-black mb-12">Our Sponsors</h2>
-
-      <div className="space-y-16">
-        <div className="text-center">
-          <h3 className="text-xl md:text-2xl font-bold text-black mb-4">Co-Sponsor</h3>
-          <div className="flex justify-center">
-            <Image src="/sponsors/Viettel.png" alt="Viettel" width={200} height={100} />
-          </div>
-        </div>
-
-        <div className="text-center">
-          <h3 className="text-xl md:text-2xl font-bold text-black mb-4">Supporting Sponsor</h3>
-          <div className="flex justify-center">
-            <Image src="/sponsors/Fptai.png" alt="FPT-AI" width={200} height={100} />
-          </div>
-        </div>
+    <section id="sponsors" className="py-20 bg-gray-100">
+      <div className="container mx-auto px-4">
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className="text-4xl font-bold text-center mb-10"
+        >
+          Sponsors
+        </motion.h2>
         
+        <div className="mb-10">
+          <h3 className="text-2xl font-semibold text-center mb-6">Co-organizer</h3>
+          <div className="flex justify-center">
+            {sponsors.coOrganizer.map((sponsor, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: index * 0.2 }}
+                className="mx-4"
+              >
+                <img src={sponsor.logo} alt={sponsor.name} className="h-24" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-10">
+          <h3 className="text-2xl font-semibold text-center mb-6">Silver</h3>
+          <div className="flex justify-center">
+            {sponsors.silver.map((sponsor, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: index * 0.2 }}
+                className="mx-4"
+              >
+                <img src={sponsor.logo} alt={sponsor.name} className="h-24" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-10">
+          <h3 className="text-2xl font-semibold text-center mb-6">Bronze</h3>
+          <div className="flex justify-center">
+            {sponsors.bronze.map((sponsor, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: index * 0.2 }}
+                className="mx-4"
+              >
+                <img src={sponsor.logo} alt={sponsor.name} className="h-24" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default SponsoringSection;
+export default SponsorSection;

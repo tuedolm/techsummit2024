@@ -5,6 +5,14 @@ import ExpandableCard from "./ExpandableCard";
 
 const speakers = [
   {
+    name: "HUNG HOANG NGUYEN",
+    title: "CTO at Viettel AI",
+    image: "/speakers/hungnguyen-photo.jpeg",
+    description: "Detailed information about Hung Hoang Nguyen.",
+    twitter: "#",
+    linkedin: "#",
+  },
+  {
     name: "CHAU VU",
     title: "Co-Founder of Techcare Coaching",
     image: "/speakers/chauvu-photo.png",
@@ -19,8 +27,39 @@ const speakers = [
     description: "Detailed information about Duc Pham.",
     twitter: "#",
     linkedin: "#",
+  },
+  {
+    name: "HUNG DOAN",
+    title: "Staff Software Engineer at Databricks",
+    image: "/speakers/hungdoan-photo.jpg",
+    description: "Detailed information about Hung Doan.",
+    twitter: "#",
+    linkedin: "#",
+  },
+  {
+    name: "SUNNY HIEN NGUYEN",
+    title: "Product Lead at Twelve Labs",
+    image: "/speakers/sunny-photo.jpeg",
+    description: "Detailed information about Sunny Hien Nguyen.",
+    twitter: "#",
+    linkedin: "#",
+  },
+  {
+    name: "MANH NGUYEN",
+    title: "Staff ML & Robotics (Tech Lead) at Cruise",
+    image: "/speakers/manhnguyen-photo.jpg",
+    description: "Detailed information about Manh Nguyen.",
+    twitter: "#",
+    linkedin: "#",
+  },
+  {
+    name: "Tuan Doan",
+    title: "Staff DS at Quora | Head of Growth POE",
+    image: "/speakers/tuandoan-photo.jpg",
+    description: "Detailed information about Tuan Doan.",
+    twitter: "#",
+    linkedin: "#",
   }
-  // Add more speakers as needed
 ];
 
 const SpeakersSection = () => {

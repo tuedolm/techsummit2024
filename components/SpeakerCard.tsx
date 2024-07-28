@@ -12,14 +12,14 @@ const SpeakerCard = ({ speaker, onClick }: { speaker: any; onClick: () => void }
         className="absolute inset-0 w-full h-full object-cover rounded-lg"
       />
     </div>
-    <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none">
-      <h3 className="text-white text-base font-bold">{speaker.name}</h3>
-      <p className="text-neutral-400 text-sm">{speaker.title}</p>
-      <div className="flex space-x-1 mt-1">
-        <a href={speaker.twitter} className="text-neutral-400 hover:text-white pointer-events-auto">
+    <div className="mt-2 flex flex-col items-start p-4 rounded-lg">
+      <h3 className="text-base font-bold">{speaker.name}</h3>
+      <p className="text-sm text-neutral-600">{speaker.title}</p>
+      <div className="flex space-x-2 mt-2">
+        <a href={speaker.twitter} className="text-neutral-600 hover:text-black">
           <FaTwitter size={20} />
         </a>
-        <a href={speaker.linkedin} className="text-neutral-400 hover:text-white pointer-events-auto">
+        <a href={speaker.linkedin} className="text-neutral-600 hover:text-black">
           <FaLinkedin size={20} />
         </a>
       </div>

@@ -158,7 +158,7 @@ const agendaItems = {
 const AgendaSection = () => {
   return (
     <div id="agenda" className="w-full max-w-6xl mx-auto p-8 md:p-16">
-      <h2 className="text-3xl md:text-5xl font-bold text-center text-black">Agenda</h2>
+      <h2 className="text-3xl md:text-5xl font-bold text-center text-black">2024 Agenda</h2>
       <div className="mt-12 space-y-12">
         {Object.entries(agendaItems).map(([day, items], index) => (
           <div key={index}>
@@ -171,7 +171,7 @@ const AgendaSection = () => {
                       <div className="text-lg font-bold text-neutral-700 dark:text-neutral-300">{item.time}</div>
                       <div className="text-sm text-neutral-500">{item.duration}</div>
                     </div>
-                    <div className="bg-neutral-200 dark:bg-neutral-800 p-2 rounded text-neutral-500">{item.location}</div>
+                    <div className="bg-blue-700 dark:bg-neutral-800 p-2 rounded text-white">{item.location}</div>
                   </div>
                   <h3 className="mt-4 text-xl font-bold text-neutral-800 dark:text-neutral-100">{item.title}</h3>
                   <p className="mt-2 text-neutral-600 dark:text-neutral-400">{item.description}</p>
