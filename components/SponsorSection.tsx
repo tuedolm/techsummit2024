@@ -104,7 +104,7 @@ const SponsorSection = () => {
                 transition={{ duration: 1, delay: index * 0.2 }}
                 className="mx-4 my-2 md:my-0"
               >
-                <img src={sponsor.logo} alt={sponsor.name} className="h-32 max-h-32 max-w-60 object-contain" />
+                <img src={sponsor.logo} alt={sponsor.name} className="h-14 max-h-14 max-w-60 object-contain" />
               </motion.div>
             ))}
           </div>
