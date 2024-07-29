@@ -6,22 +6,22 @@ import useInViewAnimation from "@/hooks/useInViewAnimation"; // Update the impor
 const experiences = [
   {
     title: "Company Tour",
-    description: "Take a guided tour of tech companies and get an inside look at Bay Area's state-of-the-art facilities. Learn about our cutting-edge technologies and innovative projects.",
+    description: "Gain exclusive access to leading tech companies. Witness groundbreaking innovations firsthand and understand the dynamics that drive success in Silicon Valley.",
     image: "/experiences/companytour-photo.jpg",
   },
   {
     title: "Panel Discussion",
-    description: "Join industry experts and thought leaders in engaging panel discussions. Gain valuable insights and perspectives on the latest trends and challenges in the tech industry.",
+    description: "Join conversations with high-profile speakers from the U.S. and Vietnam tech industry. Gain insights into the latest technological trends, industry challenges, and future opportunities.",
     image: "/experiences/panelist-photo.jpg",
   },
   {
     title: "Workshops",
-    description: "Participate in hands-on workshops led by experienced professionals. Learn new skills, explore emerging technologies, and collaborate with fellow attendees.",
+    description: "Participate in diverse workshops tailored to enhance your career and technical skills. Delve into new topics and stay ahead in the fast-evolving tech landscape.",
     image: "/experiences/workshop-photo.jpg",
   },
   {
     title: "Meet and Network",
-    description: "Connect with like-minded individuals, industry professionals, and potential collaborators. Expand your professional network and forge valuable relationships.",
+    description: "Connect with industry leaders, peers, and potential mentors. Build relationships that can propel your career forward and expand your professional network.",
     image: "/experiences/networking-photo.jpg",
   },
 ];

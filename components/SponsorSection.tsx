@@ -12,7 +12,7 @@ const sponsors = {
   ],
   bronze: [
     { name: 'Remitly', logo: '/sponsors/remitly.png' },
-    { name: 'Vietkieu', logo: '/images/company-e-logo.png' }
+    { name: 'Vietkieu', logo: '/sponsors/vietkieu.png' }
   ]
 };
 
