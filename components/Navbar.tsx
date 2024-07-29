@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href="#agenda" onClick={handleMenuToggle} className="scroll-link text-black hover:text-gray-700">Agenda</a>
           <a href="#speakers" onClick={handleMenuToggle} className="scroll-link text-black hover:text-gray-700">Speakers</a>
           <a href="#sponsors" onClick={handleMenuToggle} className="scroll-link text-black hover:text-gray-700">Sponsors</a>
-          <a href="#tickets" onClick={handleMenuToggle} className="scroll-link text-black hover:text-gray-700">Tickets</a>
+          <a href="#tickets" onClick={handleMenuToggle} className="scroll-link text-black hover:text-gray-700">Registration</a>
           <a href="#contact" onClick={handleMenuToggle} className="scroll-link text-black hover:text-gray-700">Contact</a>
         </div>
       )}

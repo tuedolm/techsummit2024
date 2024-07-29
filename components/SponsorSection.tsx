@@ -3,6 +3,8 @@ import Image from 'next/image';
 
 const sponsors = {
   coOrganizer: [
+    { name: 'Vietnam Tech Society', logo: '/sponsors/vts.png' },
+    { name: 'VietSpark', logo: '/sponsors/vietspark.png' },
     { name: 'Viettel AI', logo: '/sponsors/viettel.jpg' }
   ],
   silver: [

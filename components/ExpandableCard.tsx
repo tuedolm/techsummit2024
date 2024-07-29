@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const ExpandableCard = ({ speaker, onClose }: { speaker: any, onClose: () => void }) => (
   <motion.div
@@ -23,10 +23,7 @@ const ExpandableCard = ({ speaker, onClose }: { speaker: any, onClose: () => voi
         dangerouslySetInnerHTML={{ __html: speaker.description.replace(/\n/g, '<br />') }}
       />
       <div className="flex space-x-4 mt-4">
-        <a href={speaker.twitter} className="text-neutral-400 hover:text-white">
-          <FaTwitter size={24} />
-        </a>
-        <a href={speaker.linkedin} className="text-neutral-400 hover:text-white">
+        <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white">
           <FaLinkedin size={24} />
         </a>
       </div>

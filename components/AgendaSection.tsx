@@ -58,49 +58,21 @@ const agendaItems = {
       title: "Welcome Speech from Organizers and Sponsors",
       location: "Main Hall",
       description: "Kickoff speech from our organizers and sponsors.",
-      speakers: [
-        {
-          name: "Jane Smith",
-          title: "Event Sponsor",
-          image: "/speakers/jane_smith.jpg",
-        },
-      ],
+      speakers: [],
     },
     {
       time: "10:15 AM - 11:15 AM",
       title: "Panel Discussion",
       location: "Main Hall",
       description: "Discussion on the latest trends and innovations in tech.",
-      speakers: [
-        {
-          name: "Alice Johnson",
-          title: "Tech Expert",
-          image: "/speakers/alice_johnson.jpg",
-        },
-        {
-          name: "Bob Lee",
-          title: "Industry Leader",
-          image: "/speakers/bob_lee.jpg",
-        },
-      ],
+      speakers: [],
     },
     {
       time: "11:15 AM - 12:00 PM",
       title: "Panel Q&A",
       location: "Main Hall",
       description: "Q&A session with the panelists.",
-      speakers: [
-        {
-          name: "Alice Johnson",
-          title: "Tech Expert",
-          image: "/speakers/alice_johnson.jpg",
-        },
-        {
-          name: "Bob Lee",
-          title: "Industry Leader",
-          image: "/speakers/bob_lee.jpg",
-        },
-      ],
+      speakers: [],
     },
     {
       time: "12:00 PM - 1:00 PM",
@@ -114,31 +86,14 @@ const agendaItems = {
       title: "Workshops",
       location: "Various Locations",
       description: "Hands-on workshops on various tech topics.",
-      speakers: [
-        {
-          name: "Carlos Ruiz",
-          title: "Workshop Leader",
-          image: "/speakers/carlos_ruiz.jpg",
-        },
-        {
-          name: "Diana Miller",
-          title: "Workshop Leader",
-          image: "/speakers/diana_miller.jpg",
-        },
-      ],
+      speakers: [],
     },
     {
       time: "5:00 PM - 6:00 PM",
       title: "Closing Remarks, Raffle, and Networking",
       location: "Main Hall",
       description: "Final remarks, raffle draw, and networking opportunities.",
-      speakers: [
-        {
-          name: "Emily Davis",
-          title: "Event Organizer",
-          image: "/speakers/emily_davis.jpg",
-        },
-      ],
+      speakers: [],
     },
   ],
 };
