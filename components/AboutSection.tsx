@@ -8,7 +8,7 @@ const AboutSection = () => {
   };
 
   return (
-    <div id="about" className="h-auto w-full flex flex-col items-center justify-center p-8 md:p-16 mb-16">
+    <div id="about" className="h-auto w-full flex flex-col items-center justify-center p-8 md:pt-16 mb-16">
       <div className="w-full max-w-6xl mx-auto">
         {/* Main Content */}
         <motion.h1

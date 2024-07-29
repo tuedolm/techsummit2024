@@ -13,16 +13,19 @@ const Hero = () => {
 
   return (
     <div 
-      className="relative w-full h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[90vh] mb-8 cursor-pointer"
+      className="relative w-full h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[90vh] mb-8 cursor-pointer overflow-hidden"
       onClick={handleScrollToTickets}
     >
-      <Image 
-        src="/hero-banner.png" 
-        alt="Banner Image" 
-        fill 
-        sizes="100vw" 
-        className="object-cover object-center" // Use object-center to position the image
-      />
+      <div className="w-full h-full relative">
+        <Image 
+          src="/hero-banner.png" 
+          alt="Banner Image" 
+          fill 
+          sizes="100vw" 
+          className="object-cover object-center" // Use object-center to position the image
+          priority={true} // Ensure the image loads quickly
+        />
+      </div>
     </div>
   );
 };

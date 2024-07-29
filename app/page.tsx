@@ -11,6 +11,7 @@ import ContactSection from "@/components/ContactSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import TicketSection from "@/components/TicketSection";
+import RecapSection from "@/components/RecapSection";
 
 export default function AppPage() {
   return (
@@ -18,6 +19,7 @@ export default function AppPage() {
       <Navbar />
       <Hero />
       <AboutSection />
+      <RecapSection />
       <ExperienceSection /> 
       <AgendaSection />
       <SpeakersSection />
