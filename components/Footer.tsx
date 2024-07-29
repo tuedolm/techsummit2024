@@ -12,10 +12,10 @@ const Footer = () => {
           </div>
           
           <div className="flex space-x-4">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-100">
+            <a href="https://www.linkedin.com/events/techsummit2024byvietsparkandvie7219185468997824512/" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-100">
               <FaLinkedin size={20} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-100">
+            <a href="https://www.facebook.com/events/1282940509347909" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-100">
               <FaFacebook size={20} />
             </a>
           </div>

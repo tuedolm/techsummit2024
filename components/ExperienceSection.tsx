@@ -36,7 +36,7 @@ const ExperienceSection: React.FC = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={animation}
           transition={{ duration: 0.5 }}
-          className="text-3xl md:text-5xl font-bold text-center text-white"
+          className="text-3xl md:text-5xl font-aileron font-bold text-center text-white"
         >
           Exclusive on-site experiences:
         </motion.h2>

@@ -6,11 +6,12 @@ const sponsors = {
     { name: 'Viettel AI', logo: '/sponsors/viettel.jpg' }
   ],
   silver: [
-    { name: 'FPT AI', logo: '/sponsors/fpt.ai' },
+    { name: 'FPT AI', logo: '/sponsors/fpt.png' },
+    { name: 'Wonderates', logo: '/sponsors/wonder-rates.png' },
     { name: 'LaCaphe', logo: '/sponsors/lacaphe.png' }
   ],
   bronze: [
-    { name: 'Remitly', logo: '/images/company-d-logo.png' },
+    { name: 'Remitly', logo: '/sponsors/remitly.png' },
     { name: 'Vietkieu', logo: '/images/company-e-logo.png' }
   ]
 };
@@ -31,7 +32,7 @@ const SponsorSection = () => {
         
         <div className="mb-10">
           <h3 className="text-2xl font-semibold text-center mb-6">Co-organizer</h3>
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.coOrganizer.map((sponsor, index) => (
               <motion.div
                 key={index}
@@ -39,9 +40,9 @@ const SponsorSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, delay: index * 0.2 }}
-                className="mx-4"
+                className="mx-4 my-2 md:my-0"
               >
-                <img src={sponsor.logo} alt={sponsor.name} className="h-24" />
+                <img src={sponsor.logo} alt={sponsor.name} className="h-32 max-h-32 max-w-60 object-contain" />
               </motion.div>
             ))}
           </div>
@@ -49,7 +50,7 @@ const SponsorSection = () => {
 
         <div className="mb-10">
           <h3 className="text-2xl font-semibold text-center mb-6">Silver</h3>
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.silver.map((sponsor, index) => (
               <motion.div
                 key={index}
@@ -57,9 +58,9 @@ const SponsorSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, delay: index * 0.2 }}
-                className="mx-4"
+                className="mx-4 my-2 md:my-0"
               >
-                <img src={sponsor.logo} alt={sponsor.name} className="h-24" />
+                <img src={sponsor.logo} alt={sponsor.name} className="h-32 max-h-32 max-w-60 object-contain" />
               </motion.div>
             ))}
           </div>
@@ -67,7 +68,7 @@ const SponsorSection = () => {
 
         <div className="mb-10">
           <h3 className="text-2xl font-semibold text-center mb-6">Bronze</h3>
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.bronze.map((sponsor, index) => (
               <motion.div
                 key={index}
@@ -75,9 +76,9 @@ const SponsorSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, delay: index * 0.2 }}
-                className="mx-4"
+                className="mx-4 my-2 md:my-0"
               >
-                <img src={sponsor.logo} alt={sponsor.name} className="h-24" />
+                <img src={sponsor.logo} alt={sponsor.name} className="h-32 max-h-32 max-w-60 object-contain" />
               </motion.div>
             ))}
           </div>

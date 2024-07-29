@@ -158,7 +158,7 @@ const agendaItems = {
 const AgendaSection = () => {
   return (
     <div id="agenda" className="w-full max-w-6xl mx-auto p-8 md:p-16">
-      <h2 className="text-3xl md:text-5xl font-bold text-center text-black">2024 Agenda</h2>
+      <h2 className="text-3xl md:text-5xl font-aileron font-bold text-center text-black">2024 Agenda</h2>
       <div className="mt-12 space-y-12">
         {Object.entries(agendaItems).map(([day, items], index) => (
           <div key={index}>
