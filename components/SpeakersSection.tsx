@@ -88,8 +88,8 @@ const SpeakersSection: React.FC = () => {
       id="speakers"
       className="w-full max-w-6xl mx-auto p-8 md:p-16"
     >
-      <h2 className="text-3xl md:text-5xl font-bold text-center text-black">Speakers</h2>
-      <p className="text-center text-black mt-4">
+      <h2 className="text-3xl md:text-5xl font-aileron font-bold text-center text-black">Speakers</h2>
+      <p className="text-center text-black mt-4 text-md">
         We are bringing you the perfect combination of content and experience to ignite your heart, equip your mind, and spark your skill.
       </p>
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

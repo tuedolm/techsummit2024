@@ -25,13 +25,13 @@ const SponsorSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="text-4xl font-bold text-center mb-10"
+          className="text-3xl md:text-5xl font-aileron font-bold text-center mb-10"
         >
           Sponsors
         </motion.h2>
         
         <div className="mb-10">
-          <h3 className="text-2xl font-semibold text-center mb-6">Co-organizer</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-6">Co-organizer</h3>
           <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.coOrganizer.map((sponsor, index) => (
               <motion.div
@@ -49,7 +49,7 @@ const SponsorSection = () => {
         </div>
 
         <div className="mb-10">
-          <h3 className="text-2xl font-semibold text-center mb-6">Silver</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-6">Silver</h3>
           <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.silver.map((sponsor, index) => (
               <motion.div
@@ -67,7 +67,7 @@ const SponsorSection = () => {
         </div>
 
         <div className="mb-10">
-          <h3 className="text-2xl font-semibold text-center mb-6">Bronze</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-6">Bronze</h3>
           <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.bronze.map((sponsor, index) => (
               <motion.div
