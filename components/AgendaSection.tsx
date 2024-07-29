@@ -117,7 +117,7 @@ const AgendaSection = () => {
                   </div>
                   <h3 className="mt-4 text-xl font-bold text-neutral-800 dark:text-neutral-100">{item.title}</h3>
                   <p className="mt-2 text-neutral-600 dark:text-neutral-400">{item.description}</p>
-                  {item.speakers.length > 0 && (
+                  {/* {item.speakers.length > 0 && (
                     <div className="mt-4 flex space-x-4">
                       {item.speakers.map((speaker, speakerIdx) => (
                         <div key={speakerIdx} className="flex items-center space-x-2">
@@ -135,7 +135,7 @@ const AgendaSection = () => {
                         </div>
                       ))}
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             ))}
