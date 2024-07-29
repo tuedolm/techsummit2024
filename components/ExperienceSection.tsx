@@ -6,22 +6,22 @@ import useInViewAnimation from "@/hooks/useInViewAnimation"; // Update the impor
 const experiences = [
   {
     title: "Company Tour",
-    description: "Company Tour Section text",
+    description: "Take a guided tour of tech companies and get an inside look at Bay Area's state-of-the-art facilities. Learn about our cutting-edge technologies and innovative projects.",
     image: "/experiences/companytour-photo.jpg",
   },
   {
     title: "Panel Discussion",
-    description: "Panel Discussion Section text",
+    description: "Join industry experts and thought leaders in engaging panel discussions. Gain valuable insights and perspectives on the latest trends and challenges in the tech industry.",
     image: "/experiences/panelist-photo.jpg",
   },
   {
     title: "Workshops",
-    description: "Workshops Section text",
+    description: "Participate in hands-on workshops led by experienced professionals. Learn new skills, explore emerging technologies, and collaborate with fellow attendees.",
     image: "/experiences/workshop-photo.jpg",
   },
   {
     title: "Meet and Network",
-    description: "Meet and Network Section text",
+    description: "Connect with like-minded individuals, industry professionals, and potential collaborators. Expand your professional network and forge valuable relationships.",
     image: "/experiences/networking-photo.jpg",
   },
 ];
