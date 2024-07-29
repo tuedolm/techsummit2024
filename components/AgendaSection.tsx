@@ -16,11 +16,11 @@ const agendaItems = {
       location: "Main Hall",
       description: "Opening welcome by the event organizers.",
       speakers: [
-        {
-          name: "John Doe",
-          title: "Event Organizer",
-          image: "/speakers/john_doe.jpg",
-        },
+        // {
+        //   name: "John Doe",
+        //   title: "Event Organizer",
+        //   image: "/speakers/john_doe.jpg",
+        // },
       ],
     },
     {
