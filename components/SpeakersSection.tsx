@@ -12,13 +12,13 @@ const speakers = [
     description: "Detailed information about Hung Hoang Nguyen.",
     linkedin: "#",
   },
-  {
-    name: "THAI DUONG",
-    title: "Chief at Calif",
-    image: "/speakers/thaiduong-photo.jpg",
-    description: "Detailed information about Thai Duong.",
-    linkedin: "https://www.linkedin.com/in/thaidn/",
-  },
+  // {
+  //   name: "THAI DUONG",
+  //   title: "Chief at Calif",
+  //   image: "/speakers/thaiduong-photo.jpg",
+  //   description: "Detailed information about Thai Duong.",
+  //   linkedin: "https://www.linkedin.com/in/thaidn/",
+  // },
   {
     name: "CHAU VU",
     title: "Co-Founder of Techcare Coaching",
