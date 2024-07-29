@@ -5,7 +5,6 @@ const agendaItems = {
   "August 16": [
     {
       time: "1:00 PM - 5:00 PM",
-      duration: "4 Hours",
       title: "Company Tour",
       location: "Various Locations",
       description: "Explore some of the leading tech companies in Silicon Valley.",
@@ -13,7 +12,6 @@ const agendaItems = {
     },
     {
       time: "6:30 PM",
-      duration: "30 Min",
       title: "Welcome",
       location: "Main Hall",
       description: "Opening welcome by the event organizers.",
@@ -27,7 +25,6 @@ const agendaItems = {
     },
     {
       time: "7:00 PM",
-      duration: "1 Hour",
       title: "Casual Networking and Dinner",
       location: "Main Hall",
       description: "Join us for dinner and networking with fellow attendees.",
@@ -35,7 +32,6 @@ const agendaItems = {
     },
     {
       time: "8:00 PM",
-      duration: "1 Hour",
       title: "Live Music by Cỏ Band",
       location: "Main Stage",
       description: "Enjoy live music performances by Cỏ Band.",
@@ -43,7 +39,6 @@ const agendaItems = {
     },
     {
       time: "9:00 PM",
-      duration: "2 Hours",
       title: "Free Flow",
       location: "Lounge Area",
       description: "Relax and enjoy free-flowing drinks and conversations.",
@@ -53,7 +48,6 @@ const agendaItems = {
   "August 17": [
     {
       time: "9:00 AM - 10:00 AM",
-      duration: "1 Hour",
       title: "Check-in",
       location: "Main Entrance",
       description: "Get your badges and materials for the day.",
@@ -61,7 +55,6 @@ const agendaItems = {
     },
     {
       time: "10:00 AM - 10:15 AM",
-      duration: "15 Min",
       title: "Welcome Speech from Organizers and Sponsors",
       location: "Main Hall",
       description: "Kickoff speech from our organizers and sponsors.",
@@ -75,7 +68,6 @@ const agendaItems = {
     },
     {
       time: "10:15 AM - 11:15 AM",
-      duration: "1 Hour",
       title: "Panel Discussion",
       location: "Main Hall",
       description: "Discussion on the latest trends and innovations in tech.",
@@ -94,7 +86,6 @@ const agendaItems = {
     },
     {
       time: "11:15 AM - 12:00 PM",
-      duration: "45 Min",
       title: "Panel Q&A",
       location: "Main Hall",
       description: "Q&A session with the panelists.",
@@ -113,7 +104,6 @@ const agendaItems = {
     },
     {
       time: "12:00 PM - 1:00 PM",
-      duration: "1 Hour",
       title: "Lunch",
       location: "Dining Area",
       description: "Enjoy a variety of delicious meals.",
@@ -121,7 +111,6 @@ const agendaItems = {
     },
     {
       time: "1:00 PM - 5:00 PM",
-      duration: "4 Hours",
       title: "Workshops",
       location: "Various Locations",
       description: "Hands-on workshops on various tech topics.",
@@ -140,7 +129,6 @@ const agendaItems = {
     },
     {
       time: "5:00 PM - 6:00 PM",
-      duration: "1 Hour",
       title: "Closing Remarks, Raffle, and Networking",
       location: "Main Hall",
       description: "Final remarks, raffle draw, and networking opportunities.",
@@ -168,8 +156,7 @@ const AgendaSection = () => {
                 <div className="flex-1 bg-white dark:bg-neutral-900 p-6 rounded-lg shadow-md">
                   <div className="flex justify-between items-center">
                     <div>
-                      <div className="text-lg font-bold text-neutral-700 dark:text-neutral-300">{item.time}</div>
-                      <div className="text-sm text-neutral-500">{item.duration}</div>
+                      <div className="text-lg text-neutral-700 dark:text-neutral-300">{item.time}</div>
                     </div>
                     <div className="bg-blue-700 dark:bg-neutral-800 p-2 rounded text-white">{item.location}</div>
                   </div>

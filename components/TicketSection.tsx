@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const TicketSection = () => {
   return (
-    <div id="tickets" className="h-auto w-full flex flex-col items-center justify-center p-8 md:p-16 mb-16 font-josefin">
+    <div id="tickets" className="h-auto w-full flex flex-col items-center justify-center p-8 md:p-16 mb-16">
       <div className="w-full max-w-6xl mx-auto relative">
         {/* Main Content */}
         <motion.h1
