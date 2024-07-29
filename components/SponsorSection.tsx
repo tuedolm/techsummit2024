@@ -31,7 +31,15 @@ const SponsorSection = () => {
         </motion.h2>
         
         <div className="mb-10">
-          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-6">Co-organizer</h3>
+          <motion.h3
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="text-2xl md:text-3xl font-semibold text-center mb-6"
+          >
+            Co-organizer
+          </motion.h3>
           <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.coOrganizer.map((sponsor, index) => (
               <motion.div
@@ -49,7 +57,15 @@ const SponsorSection = () => {
         </div>
 
         <div className="mb-10">
-          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-6">Silver</h3>
+          <motion.h3
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="text-2xl md:text-3xl font-semibold text-center mb-6"
+          >
+            Silver
+          </motion.h3>
           <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.silver.map((sponsor, index) => (
               <motion.div
@@ -67,7 +83,15 @@ const SponsorSection = () => {
         </div>
 
         <div className="mb-10">
-          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-6">Bronze</h3>
+          <motion.h3
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="text-2xl md:text-3xl font-semibold text-center mb-6"
+          >
+            Bronze
+          </motion.h3>
           <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.bronze.map((sponsor, index) => (
               <motion.div

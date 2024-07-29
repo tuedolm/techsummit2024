@@ -22,7 +22,7 @@ const Hero = () => {
           alt="Banner Image" 
           fill 
           sizes="100vw" 
-          className="object-cover object-center" // Use object-center to position the image
+          className="h-full object-cover" // Use object-center to position the image
           priority={true} // Ensure the image loads quickly
         />
       </div>
