@@ -10,9 +10,9 @@ const TicketSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative z-10 text-3xl md:text-7xl text-center font-sans font-bold text-black"
+          className="relative z-10 text-3xl md:text-5xl font-aileron font-bold text-center text-black"
         >
-          Get Your Tickets
+          Registration Info
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
