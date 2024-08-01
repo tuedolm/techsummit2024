@@ -18,7 +18,7 @@ const AboutSection = () => {
           transition={{ duration: 1 }}
           className="relative z-10 text-3xl md:text-7xl text-center font-josefin font-bold text-black"
         >
-          Tech Summit 2024
+          
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -29,28 +29,28 @@ const AboutSection = () => {
         >
           <h2 className="text-3xl md:text-5xl font-aileron font-bold text-blue-700">The Future Is Now: Get Ready To Connect, Learn, And Be Inspired!</h2>
           <p className="text-md md:text-lg text-black font-inter">
-            TECH SUMMIT 2024 is an annual conference for future-ready Vietnamese professionals, organized by <span className="font-bold">VIET SPARK</span> and the <span className="font-bold">VIETNAM TECH SOCIETY</span>. This year, the summit returns to Silicon Valley with a transformative two-day event tailored for Vietnamese professionals and students aiming to thrive in the U.S. tech industry.
+            <span className="font-bold">TECH SUMMIT 2024</span> is an annual conference for future-ready Vietnamese professionals, organized by <span className="font-bold">VIET SPARK</span> and the <span className="font-bold">VIETNAM TECH SOCIETY</span>. This year, the summit returns to Silicon Valley with a transformative two-day event tailored for Vietnamese professionals and students aiming to thrive in the U.S. tech industry.
           </p>
           <p className="text-md md:text-lg text-black font-inter">
             The main conference offers engaging panel discussions with top speakers, cutting-edge AI workshops, and professional skill enhancement. Plus, enjoy exclusive tours of Silicon Valley tech headquarters, along with networking and mentoring opportunities.
           </p>
-          <p className="font-bold text-lg md:text-xl text-black font-aileron">DON&apos;T MISS OUT—REGISTER NOW!</p>
+          <p className="font-bold text-lg md:text-xl text-black font-inter">DON&apos;T MISS OUT—REGISTER NOW!</p>
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mt-8">
             <div className="flex flex-col items-center">
               <div className="flex items-center space-x-2">
                 <FaCalendarAlt className="w-6 h-6 text-black" />
-                <p className="text-black text-md md:text-lg font-aileron">16-17 August 2024</p>
+                <p className="text-black text-md md:text-lg font-inter">16-17 August 2024</p>
               </div>
             </div>
             <div className="flex flex-col items-center">
               <div className="flex items-center space-x-2">
-                <FaMapMarkerAlt className="w-6 h-6 text-black font-aileron" />
-                <p className="text-black text-md md:text-lg">Silicon Valley, CA</p>
+                <FaMapMarkerAlt className="w-6 h-6 text-black" />
+                <p className="text-black text-md md:text-lg font-inter">Silicon Valley, CA</p>
               </div>
             </div>
           </div>
           <a href="#tickets" onClick={handleScrollToTickets} className="scroll-link mt-8 px-8 py-4 bg-blue-700 text-white rounded-md text-lg font-bold font-inter inline-block">
-            Register Now!
+            Buy Tickets
           </a>
         </motion.div>
       </div>

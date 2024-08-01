@@ -7,7 +7,7 @@ const agendaItems = {
       time: "1:00 PM - 5:00 PM",
       title: "Company Tour",
       location: "Various Locations",
-      description: "Explore some of the leading tech companies in Silicon Valley.",
+      description: "2:00 - 3:30 PM: Microsoft Tour.\n3:30 - 5:00 PM: Google Tour - Mountain View Campus.",
       speakers: [],
     },
     {
@@ -15,13 +15,7 @@ const agendaItems = {
       title: "Welcome",
       location: "Main Hall",
       description: "Opening welcome by the event organizers.",
-      speakers: [
-        // {
-        //   name: "John Doe",
-        //   title: "Event Organizer",
-        //   image: "/speakers/john_doe.jpg",
-        // },
-      ],
+      speakers: [],
     },
     {
       time: "7:00 PM",
@@ -116,7 +110,7 @@ const AgendaSection = () => {
                     <div className="bg-blue-700 dark:bg-neutral-800 p-2 rounded text-white">{item.location}</div>
                   </div>
                   <h3 className="mt-4 text-xl font-bold text-neutral-800 dark:text-neutral-100">{item.title}</h3>
-                  <p className="mt-2 text-neutral-600 dark:text-neutral-400">{item.description}</p>
+                  <p className="mt-2 text-neutral-600 dark:text-neutral-400 whitespace-pre-wrap">{item.description}</p>
                   {/* {item.speakers.length > 0 && (
                     <div className="mt-4 flex space-x-4">
                       {item.speakers.map((speaker, speakerIdx) => (

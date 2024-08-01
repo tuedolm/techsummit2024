@@ -29,8 +29,6 @@ const RecapSection = () => {
             width="800"
             height={isMobile ? "200" : "450"}
             style={{ border: "none", overflow: "hidden" }}
-            scrolling="no"
-            frameBorder="0"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
             allowFullScreen={true}
             className="mobile-iframe"
@@ -42,7 +40,7 @@ const RecapSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.4 }}
-        className="text-center text-neutral-600 mt-2 md:mt-4"
+        className="text-center mt-2 md:mt-4 font-inter font-black"
       >
         Relive the moments from our recent Tech Summit 2023 event held in Silicon Valley. Watch the highlights and see how we connected, learned, and got inspired together!
       </motion.p>
