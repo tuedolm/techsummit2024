@@ -18,7 +18,7 @@ const AboutSection = () => {
           transition={{ duration: 1 }}
           className="relative z-10 text-3xl md:text-7xl text-center font-josefin font-bold text-black"
         >
-          
+          Tech Summit 2024
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

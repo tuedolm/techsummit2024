@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/hero-banner.png",
+        url: "https://www.techsummitusa.org/hero-banner.png",
         width: 800,
         height: 600,
         alt: "Tech Summit 2024 Preview Image",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: "/hero-banner.png",
+        url: "https://www.techsummitusa.org/hero-banner.png",
         width: 800,
         height: 600,
         alt: "Tech Summit 2024 Preview Image",
