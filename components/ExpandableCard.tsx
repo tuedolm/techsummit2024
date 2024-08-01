@@ -23,9 +23,11 @@ const ExpandableCard = ({ speaker, onClose }: { speaker: any, onClose: () => voi
         dangerouslySetInnerHTML={{ __html: speaker.description.replace(/\n/g, '<br />') }}
       />
       <div className="flex space-x-4 mt-4">
-        <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white">
-          <FaLinkedin size={24} />
-        </a>
+        {speaker.linkedin && (
+          <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white">
+            <FaLinkedin size={24} />
+          </a>
+        )}
       </div>
       <button onClick={onClose} className="mt-4 px-4 py-2 bg-purple-500 text-white rounded-lg">
         Close

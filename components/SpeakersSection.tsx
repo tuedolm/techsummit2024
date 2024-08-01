@@ -10,15 +10,29 @@ const speakers = [
     title: "CTO at Viettel AI",
     image: "/speakers/hungnguyen-photo.jpeg",
     description: "Detailed information about Hung Hoang Nguyen.",
-    linkedin: "#",
+    linkedin: "",
   },
-  // {
-  //   name: "THAI DUONG",
-  //   title: "Chief at Calif",
-  //   image: "/speakers/thaiduong-photo.jpg",
-  //   description: "Detailed information about Thai Duong.",
-  //   linkedin: "https://www.linkedin.com/in/thaidn/",
-  // },
+  {
+    name: "THAI DUONG",
+    title: "Chief at Calif",
+    image: "/speakers/thaiduong-photo.webp",
+    description: "Detailed information about Thai Duong.",
+    linkedin: "https://www.linkedin.com/in/thaidn/",
+  },
+  {
+    name: "TRIEU TRINH",
+    title: "Senior Research Scientist at Google DeepMind",
+    image: "/speakers/trieutrinh-photo.jpg",
+    description: "Detailed information about Trieu Trinh.",
+    linkedin: "https://www.linkedin.com/in/trinhhtrieu/",
+  },
+  {
+    name: "RAY NGUYEN",
+    title: "Distinguished Engineer at Marvell Technology",
+    image: "/speakers/raynguyen-photo.jpg",
+    description: "Detailed information about Ray Nguyen.",
+    linkedin: "https://www.linkedin.com/in/raynguyen/",
+  },
   {
     name: "CHAU VU",
     title: "Co-Founder of Techcare Coaching",
@@ -50,7 +64,7 @@ const speakers = [
   {
     name: "MANH NGUYEN",
     title: "Staff ML & Robotics (Tech Lead) at Cruise",
-    image: "/speakers/manhnguyen-photo.jpg",
+    image: "/speakers/manhnguyen-photo.jpeg",
     description: "Detailed information about Manh Nguyen.",
     linkedin: "https://www.linkedin.com/in/manhnguyenmath/",
   },
@@ -61,20 +75,20 @@ const speakers = [
     description: "Detailed information about Tuan Doan.",
     linkedin: "https://www.linkedin.com/in/tuan-nguyen-doan",
   },
-  // {
-  //   name: "TUAN ANH NGUYEN",
-  //   title: "Member of Technical Staff at Microsoft AI",
-  //   image: "/speakers/tuananhnguyen-photo.jpg",
-  //   description: "Detailed information about Tuan Anh Nguyen.",
-  //   linkedin: "https://www.linkedin.com/in/anh-nguyen-1b0a05126/",
-  // },
-  // {
-  //   name: "JAMES PHAN",
-  //   title: "Co-Founder at Opsin",
-  //   image: "/speakers/jamesphan-photo.jpg",
-  //   description: "Detailed information about James Phan.",
-  //   linkedin: "#",
-  // },
+  {
+    name: "TUAN ANH NGUYEN",
+    title: "Member of Technical Staff at Microsoft AI",
+    image: "/speakers/tuananhnguyen-photo.jpeg",
+    description: "Detailed information about Tuan Anh Nguyen.",
+    linkedin: "https://www.linkedin.com/in/anh-nguyen-1b0a05126/",
+  },
+  {
+    name: "JAMES PHAN",
+    title: "Co-Founder at Opsin",
+    image: "/speakers/jamesphan-photo.jpg",
+    description: "Detailed information about James Phan.",
+    linkedin: "https://www.linkedin.com/in/ninhmit/",
+  },
 ];
 
 const SpeakersSection: React.FC = () => {
