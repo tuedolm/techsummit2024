@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const agendaItems = {
-  "August 16": [
+  "Friday, August 16": [
     {
       time: "1:00 PM - 5:00 PM",
       title: "Company Tour",
@@ -39,7 +39,7 @@ const agendaItems = {
       speakers: [],
     },
   ],
-  "August 17": [
+  "Saturday,August 17": [
     {
       time: "9:00 AM - 10:00 AM",
       title: "Check-in",
