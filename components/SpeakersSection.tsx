@@ -5,13 +5,13 @@ import ExpandableCard from "./ExpandableCard";
 import useInViewAnimation from "@/hooks/useInViewAnimation"; // Update the import path as needed
 
 const speakers = [
-  {
-    name: "CHRISTOPHER CUONG NGUYEN",
-    title: "CEO & Co-Founder at Aitomic",
-    image: "/speakers/christophercuongnguyen-photo.jpeg",
-    description: "Detailed information about Christopher Cuong Nguyen.",
-    linkedin: "https://www.linkedin.com/in/ctnguyen/",
-  },
+  // {
+  //   name: "CHRISTOPHER CUONG NGUYEN",
+  //   title: "CEO & Co-Founder at Aitomic",
+  //   image: "/speakers/christophercuongnguyen-photo.jpeg",
+  //   description: "Detailed information about Christopher Cuong Nguyen.",
+  //   linkedin: "https://www.linkedin.com/in/ctnguyen/",
+  // },
   {
     name: "TUOC LUONG",
     title: "CEO & Co-Founder at BodiData",
