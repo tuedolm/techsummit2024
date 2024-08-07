@@ -30,7 +30,17 @@ const speakers = [
     name: "THAI DUONG",
     title: "Chief at Calif",
     image: "/speakers/thaiduong-photo.webp",
-    description: `Detailed information about Thai Duong.`,
+    description: `
+      Mr. Thai Dương, Panelist for AI: Beyond the Horizon🌅Exclusive Panel Discussion at Conference Day - Tech Summit 2024
+      
+      We are pleased to introduce Mr. Thai Dương, who will participate in this year's deep-dive panel discussion on AI. Born in Saigon and describing himself as having “grown up on the Internet,” Mr. Thai Dương is a renowned cybersecurity engineer known for his significant contributions to detecting and mitigating SSL attack techniques such as BEAST, CRIME, and POODLE. Along with a colleague, he discovered a cryptographic vulnerability in ASP.NET that affected millions of websites and won the Pwnie Award in 2011.
+      
+      Thai has spoken at several prestigious conferences such as Black Hat Europe, Real World Crypto, and IEEE S&P. His research has been featured in the New York Times and BBC and was voted as the best attack technique of 2011, 2012, and 2013.
+      
+      With 12 years at Google, Thai led the design and assessment of security for thousands of products, co-founded the ISE Crypto team, and created Project Wycheproof and Google Tink. These projects are widely used in nearly all of Google's systems and thousands of Android applications. He won the Feats of Engineering Google Awards in 2017 and 2019.
+      
+      Currently, he is running Calif, a California-based cybersecurity company with the goal of protecting the world's critical digital infrastructure. He also frequently shares his insights on his personal blog: vnhacker.substack.com.
+    `,
     linkedin: "https://www.linkedin.com/in/thaidn/",
   },
   {
@@ -148,10 +158,10 @@ const speakers = [
     linkedin: "https://www.linkedin.com/in/tuan-nguyen-doan",
   },
   {
-    name: "TUAN ANH NGUYEN",
+    name: "ANH NGUYEN",
     title: "Member of Technical Staff at Microsoft AI",
     image: "/speakers/tuananhnguyen-photo.jpeg",
-    description: `Detailed information about Tuan Anh Nguyen.`,
+    description: `Detailed information aboutAnh Nguyen.`,
     linkedin: "https://www.linkedin.com/in/anh-nguyen-1b0a05126/",
   },
   {
