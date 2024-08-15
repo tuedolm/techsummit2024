@@ -5,25 +5,34 @@ import ExpandableCard from "./ExpandableCard";
 import useInViewAnimation from "@/hooks/useInViewAnimation"; // Update the import path as needed
 
 const speakers = [
-  // {
-  //   name: "CHRISTOPHER CUONG NGUYEN",
-  //   title: "CEO & Co-Founder at Aitomic",
-  //   image: "/speakers/christophercuongnguyen-photo.jpeg",
-  //   description: "Detailed information about Christopher Cuong Nguyen.",
-  //   linkedin: "https://www.linkedin.com/in/ctnguyen/",
-  // },
   {
     name: "TUOC LUONG",
     title: "CEO & Co-Founder at BodiData",
-    image: "/speakers/tuocluong-photo.webp",
-    description: "Detailed information about Tuoc Luong.",
+    image: "/speakers/tuocluong-photo.jpg",
+    description: `
+      We're thrilled to welcome Tuoc Luong, a trailblazer in the tech industry, as one of our distinguished panelists. Tuoc's extensive leadership background in both tech giants and startups brings a wealth of experience and valuable insights to the table.
+      
+      Tuoc previously served as the CEO of Shanda Online until 2014 and was the Global Senior Vice President at Yahoo from 2007 to 2010, where he led the Search Division and successfully increased market share. His career also includes senior roles such as Chief Technology Officer at Zazzle Inc., IAC Search & Media, Inc., and Microsoft. As the founder of Jybe, Inc. and Lookspark, both acquired by Yahoo, Tuoc has a proven track record of successful entrepreneurship.
+      
+      In addition to his corporate achievements, Tuoc is an active angel investor and adviser, supporting numerous startups in Silicon Valley. His experience in both leading established companies and fostering new ventures makes him a key figure in the evolving landscape of technology.
+    `,
     linkedin: "https://www.linkedin.com/in/tuocluong/",
   },
   {
     name: "HUNG HOANG NGUYEN",
     title: "CTO at Viettel AI",
     image: "/speakers/hungnguyen-photo.jpeg",
-    description: `Detailed information about Hung Hoang Nguyen.`,
+    description: `
+      🌊Driving the Wave of AI Development in Vietnam: Progress with LLM Virtual Assistants - Welcoming Mr. Nguyễn Hoàng Hưng, CTO of Viettel AI at Tech Summit 2024
+      
+      We are honored to introduce Mr. Nguyễn Hoàng Hưng, CTO of Viettel AI, who will be a speaker at Tech Summit 2024. Mr. Hưng will participate in the panel discussion "AI: Beyond the Horizon" and will also host a dedicated session on LLM Virtual Assistants, an advanced AI solution developed by Viettel AI.
+      
+      Mr. Hưng has nearly 20 years of experience working with major technology corporations in the fields of information security and artificial intelligence. As the Chief Technology Officer at Viettel AI, he leads core technology research projects, promotes collaborative research activities both domestically and internationally, and directs the unit's science and technology development strategy. Currently, he is particularly focused on and researching areas such as Generative AI (GenAI), foundation models, and high-performance computing for training AI models.
+      
+      Mr. Hưng will share insights on the challenges and opportunities of deploying large language models (LLM) in Vietnamese. His experiences in optimizing AI models, particularly in Vietnamese, to enhance interaction and better serve local users, will be incredibly valuable for young enthusiasts passionate about developing new technological innovations.
+      
+      Join us in listening to the valuable insights from Mr. Nguyễn Hoàng Hưng at Tech Summit 2024. This will be a great opportunity to gain deeper insights into AI technology research and how Vietnamese businesses can leverage this to develop and innovate new technological models.
+    `,
     linkedin: "",
   },
   {
@@ -47,7 +56,17 @@ const speakers = [
     name: "TRIEU TRINH",
     title: "Senior Research Scientist at Google DeepMind",
     image: "/speakers/trieutrinh-photo.jpg",
-    description: `Detailed information about Trieu Trinh.`,
+    description: `
+      Explore the World of AI with Trinh Hoang Trieu -  Panelist for AI: Beyond the Horizon Exclusive Panel Discussion at Conference Day - Tech Summit 2024
+      
+      When it comes to the AlphaGeometry project, an artificial intelligence (AI) tool capable of solving complex geometry problems and featured in the prestigious scientific journal Nature, we cannot overlook the name Trinh Hoang Trieu. This outstanding Vietnamese Ph.D. is currently working at Google DeepMind. With passion and dedication, Trieu and his colleagues have tirelessly researched and developed AlphaGeometry, an advanced AI tool that has laid the groundwork for groundbreaking advancements in the technology sector.
+      
+      Thanks to his remarkable contributions to AI research, Trieu has quickly become a prominent figure in the tech community. He shares, "Publishing research is just the first step in a long journey towards pursuing greater goals."
+      
+      So, what are his upcoming journeys and greater goals?
+      
+      Let's explore the path of this young scientist, only at this year's event. He will share invaluable knowledge, experiences, and insights accumulated throughout his journey at one of the world's leading technology companies. This is a rare opportunity to gain a deeper understanding of the path to success of a talented young scientist and how he is helping shape the future of artificial intelligence.
+    `,
     linkedin: "https://www.linkedin.com/in/trinhhtrieu/",
   },
   {
@@ -161,14 +180,26 @@ const speakers = [
     name: "ANH NGUYEN",
     title: "Member of Technical Staff at Microsoft AI",
     image: "/speakers/tuananhnguyen-photo.jpeg",
-    description: `Detailed information aboutAnh Nguyen.`,
+    description: `
+      The race to Artificial General Intelligence (AGI) and the impact to fundamental AI research.
+      
+      🌟 Join us for a resourceful session with Anh Nguyen - Member of Technical Staff @ Microsoft AI, specializing in large-scale data curation and efficient model training. Anh brings a unique blend of research and practical application to his workshop, alongside his personal experiences, making it perfect for inspired entrepreneurs, fascinated techies, or anyone interested in pursuing a deeper understanding of modern AI.
+      
+      🚀 Anh began his career as an AI Developer Technology Intern and later as a Deep Learning Engineer at the global leader in AI and computing technology, NVIDIA. Following the release of ChatGPT, Anh pivoted to building AI models and conducting applied AI research at another tech giant, Microsoft. His adaptability and forward-thinking approach will provide valuable insights into what AI can achieve in the future.
+    `,
     linkedin: "https://www.linkedin.com/in/anh-nguyen-1b0a05126/",
   },
   {
     name: "JAMES PHAN",
     title: "Co-Founder at Opsin",
     image: "/speakers/jamesphan-photo.jpg",
-    description: `Detailed information about James Phan.`,
+    description: `
+      Ready to Kickstart Your Product Manager Career? This Workshop is a Must! 👉"𝗪𝗵𝗮𝘁 𝗗𝗼𝗲𝘀 𝗮 𝗣𝗿𝗼𝗱𝘂𝗰𝘁 𝗠𝗮𝗻𝗮𝗴𝗲𝗿 𝗗𝗼? 𝗛𝗼𝘄 𝘁𝗼 𝗕𝗲𝗰𝗼𝗺𝗲 𝗢𝗻𝗲?" by James Pham.
+      
+      James Pham is currently Co-founder of Opsin. Backed by top-tier Venture Capital, Opsin is a cutting-edge GenAI security company. Opsin provides a comprehensive security orchestration layer that empowers organizations to build GenAI applications securely with their data. Previously, James was Head of Products at 3Box Labs. He led the Product Management team to develop decentralized AIs. Before 3Box Labs, James was Principal Product Manager at Pure Storage, leading Growth and SaaS Platforms. He obtained his Master's degree from Massachusetts Institute of Technology.
+      
+      James brings extensive knowledge and experience in AI/ML and product management, offering valuable insights for those interested in understanding or pursuing a career as a product manager. 💡 Don’t miss this chance to deepen your grasp of the product manager role in the AI world.
+    `,
     linkedin: "https://www.linkedin.com/in/ninhmit/",
   },
 ];

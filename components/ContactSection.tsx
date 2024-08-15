@@ -16,7 +16,7 @@ const ContactSection = () => {
               <h4 className="mt-8 text-xl font-semibold text-neutral-700">Event Locations</h4>
               <div className="mt-4">
                 <p className="font-bold">August 16 - Networking night:</p>
-                <p className="text-neutral-600">Palo Alto Art Center - 250 Hamilton Avenue, Palo Alto, CA 94301</p>
+                <p className="text-neutral-600">Palo Alto Art Center - 1313 Newell Rd, Palo Alto, CA 94306</p>
               </div>
               <div className="mt-4">
                 <p className="font-bold">August 17 - Main conference:</p>
