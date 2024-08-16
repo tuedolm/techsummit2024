@@ -26,9 +26,11 @@ const ContactSection = () => {
             <div className="w-full md:w-1/2 mt-8 md:mt-0">
               <h3 className="text-2xl font-semibold text-neutral-700">Contact Information</h3>
               <p className="mt-4 text-neutral-600">
-                <strong>Phone:</strong> (513) 352-3209
+                <strong>Phone 1:</strong> (346) 714-4762
                 <br />
-                <strong>Fax:</strong> (513) 352-6220
+                <strong>Phone 2:</strong> (315) 439-2737
+                <br />
+                <strong>Phone 3:</strong> (608) 466-0156
                 <br />
                 <strong>Email:</strong> <a href="mailto:Contact@techsummitusa.org" className="text-purple-500">Contact@techsummitusa.org</a>
               </p>
