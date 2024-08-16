@@ -8,7 +8,6 @@ const sponsors = {
     { name: 'Viettel AI', logo: '/sponsors/viettel.jpg' }
   ],
   silver: [
-    
     { name: 'Wonderates', logo: '/sponsors/wonder-rates.png' },
     { name: 'LaCaphe', logo: '/sponsors/lacaphe.png' }
   ],
@@ -16,7 +15,11 @@ const sponsors = {
     { name: 'FPT AI', logo: '/sponsors/fpt.png' },
     { name: 'Remitly', logo: '/sponsors/remitly.png' },
     { name: 'Vietkieu', logo: '/sponsors/vietkieu.png' }
+  ],
+  partner: [
+    { name: 'VABA', logo: '/sponsors/vaba.png' }
   ]
+  
 };
 
 const SponsorSection = () => {
@@ -97,6 +100,32 @@ const SponsorSection = () => {
           </motion.h3>
           <div className="flex flex-col items-center md:flex-row md:justify-center">
             {sponsors.bronze.map((sponsor, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: index * 0.2 }}
+                className="mx-4 my-2 md:my-0"
+              >
+                <img src={sponsor.logo} alt={sponsor.name} className="h-24 max-h-24 max-w-60 object-contain" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-10">
+          <motion.h3
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="text-2xl md:text-3xl font-semibold text-center mb-6"
+          >
+            Partner
+          </motion.h3>
+          <div className="flex flex-col items-center md:flex-row md:justify-center">
+            {sponsors.partner.map((sponsor, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
