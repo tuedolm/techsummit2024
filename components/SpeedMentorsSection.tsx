@@ -114,7 +114,7 @@ const SpeakersSection: React.FC = () => {
     >
       <h2 className="text-3xl md:text-5xl font-aileron font-bold text-center text-black">Mentors</h2>
       <p className="text-center text-black mt-4 text-md">
-        We are bringing you the perfect combination of content and experience to ignite your heart, equip your mind, and spark your skill.
+      Connect with industry leaders in rapid-fire mentorship sessions designed to accelerate your growth and expand your network at lightning speed.
       </p>
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {speakers.map((speaker, index) => (
