@@ -12,6 +12,7 @@ import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import TicketSection from "@/components/TicketSection";
 import RecapSection from "@/components/RecapSection";
+import SpeedMentorsSection from "@/components/SpeedMentorsSection";
 
 export default function AppPage() {
   return (
@@ -23,6 +24,7 @@ export default function AppPage() {
       <ExperienceSection /> 
       <AgendaSection />
       <SpeakersSection />
+      <SpeedMentorsSection />
       <SponsoringSection />
       <TicketSection />
       <FAQSection />
