@@ -86,6 +86,19 @@ const speakers = [
     `,
     linkedin: "https://www.linkedin.com/in/quyenvhle/",
   },
+  {
+    name: "MINH HOANG",
+    title: "Software Engineer Manager at Meta",
+    image: "/mentors/minhhoang-photo.jpg",
+    description: `
+      Anh Minh X Hoang is currently a Software Engineering Manager at Meta, where he leads cutting-edge projects with a deep understanding of both engineering and research. Before stepping into this leadership role, Minh made his mark as a Research Scientist at Meta, focusing on pioneering studies in predicting information cascades within social networks and identifying discriminative subgraphs from global-state networks.
+
+      Minh holds a Ph.D. in Computer Science from the University of California, Santa Barbara. His academic journey is complemented by his contributions to research at leading institutions such as Microsoft, Adobe, and IBM, showcasing his breadth of expertise.
+
+      Minh's transition from research to management at Meta, after five years of dedicated effort, serves as an inspiring example for those seeking to advance their careers within the tech industry.
+    `,
+    linkedin: "https://www.linkedin.com/in/minhhx/",
+  }
 ];
 
 const SpeakersSection: React.FC = () => {
