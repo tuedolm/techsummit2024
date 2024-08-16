@@ -62,7 +62,7 @@ const speakers = [
   {
     name: "TRUNG LE",
     title: "Software Engineering Manager at Amazon",
-    image: "/mentors/trungle-photo.jpg",
+    image: "/mentors/trungle-photo.png",
     description: `
       Trung Le graduated from New Mexico State University and has more than 12 years of experience working as a Software Developer at Epic and currently at Amazon Alexa. Additionally, he has contributed to research in the field of Bioinformatics, with a focus on "CDAO-Store: Ontology-driven Data Integration for Phylogenetic Analysis."
     `,
