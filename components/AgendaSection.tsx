@@ -7,7 +7,7 @@ const agendaItems = {
       time: "1:00 PM - 5:00 PM",
       title: "Company Tour",
       location: "Various Locations",
-      description: "2:00 - 3:30 PM: Microsoft Tour.\n\n3:30 - 5:00 PM: Google Tour - Mountain View Campus.",
+      description: "2:00 - 3:30 PM: Microsoft Tour.\n\n3:30 - 5:00 PM: Google Tour - Mountain View Campus.\n\n*Disclaimer: Company tour is a complementary event to inspire Vietnamese students to pursue a career in Tech. Availability is on first come first serve basis",
       speakers: [],
     },
     {
