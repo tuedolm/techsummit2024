@@ -109,7 +109,7 @@ const agendaItems = {
       ],
     },
     {
-      time: "1:00 PM - 2:00 PM",
+      time: "2:00 PM - 3:00 PM",
       title: "Workshop: Optimizing the Robotic Mind: Cross-Industry Insights in AI Mobility",
       location: "Sequoia Room 1st floor",
       description: "Workshop on cross-industry AI mobility insights.",
@@ -163,7 +163,7 @@ const agendaItems = {
       ],
     },
     {
-      time: "3:00 PM - 4:00 PM",
+      time: "4:00 PM - 5:00 PM",
       title: "Workshop: How to use AI to improve developer productivity",
       location: "Sequoia Room 1st floor",
       description: "Workshop on using AI to boost developer productivity.",
