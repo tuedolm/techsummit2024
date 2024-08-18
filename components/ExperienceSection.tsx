@@ -7,7 +7,7 @@ const experiences = [
   {
     title: "Company Tour",
     description: `Gain exclusive access to leading tech companies. Witness groundbreaking innovations firsthand and understand the dynamics that drive success in Silicon Valley.`,
-    disclaimer: `*Disclaimer: Company tour is a complementary event to inspire Vietnamese students to pursue a career in Tech. Availability is on first come first serve basis.`,
+    disclaimer: `*Disclaimer: Company tour is a complementary event to inspire Vietnamese students to pursue a career in Tech. Availability is on first come first serve basis`,
     image: "/experiences/companytour-photo.jpg",
   },
   {
