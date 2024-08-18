@@ -6,7 +6,8 @@ import useInViewAnimation from "@/hooks/useInViewAnimation"; // Update the impor
 const experiences = [
   {
     title: "Company Tour",
-    description: "Gain exclusive access to leading tech companies. Witness groundbreaking innovations firsthand and understand the dynamics that drive success in Silicon Valley.",
+    description: `Gain exclusive access to leading tech companies. Witness groundbreaking innovations firsthand and understand the dynamics that drive success in Silicon Valley.`,
+    disclaimer: `*Disclaimer: Company tour is a complementary event to inspire Vietnamese students to pursue a career in Tech. Availability is on first come first serve basis.`,
     image: "/experiences/companytour-photo.jpg",
   },
   {
@@ -59,7 +60,16 @@ const ExperienceSection: React.FC = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-neutral-800 dark:text-neutral-100">{experience.title}</h3>
-                <p className="mt-4 text-neutral-600 dark:text-neutral-400">{experience.description}</p>
+                <p className="mt-4 text-neutral-600 dark:text-neutral-400">
+                  {experience.description}
+                  <br />
+                  {experience.disclaimer && (
+                    <>
+                      <br />
+                      <span className="text-sm text-neutral-500 dark:text-neutral-400">{experience.disclaimer}</span>
+                    </>
+                  )}
+                </p>
               </div>
             </motion.div>
           ))}
